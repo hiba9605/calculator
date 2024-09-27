@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calculator</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div id="calculator">
+        <div id="display">
+            <input id="result" type="text"  placeholder="0" class="form-control" readonly>
+        </div>
+        
+        <div id="buttons">
+            <button onclick="displaycontent('(')">(</button>
+            <button onclick="displaycontent(')')">)</button>
+            <button onclick= "removedigit('')"><i class="fa-solid fa-delete-left"></i></button>
+            <button onclick="displaycontent('/')" style="background-color: rgb(194, 177, 210);"><i class="fa-solid fa-divide"></i></button>
+
+            <button onclick="displaycontent('7')">7</button>
+            <button onclick="displaycontent('8')">8</button>
+            <button onclick="displaycontent('9')">9</button>
+            <button onclick="displaycontent('*')" style="background-color: rgb(194, 177, 210);"><i class="fa-solid fa-xmark"></i></button>
+
+            <button onclick="displaycontent('4')">4</button>
+            <button onclick="displaycontent('5')">5</button>
+            <button onclick="displaycontent('6')">6</button>
+            <button onclick="displaycontent('-')" style="background-color: rgb(194, 177, 210);">-</button>
+
+            <button onclick="displaycontent('1')">1</button>
+            <button onclick="displaycontent('2')">2</button>
+            <button onclick="displaycontent('3')">3</button>
+            <button onclick="displaycontent('+')" style="background-color: rgb(194, 177, 210);">+</button>
+
+            <button onclick="displaycontent('0')">0</button>
+            <button onclick="displaycontent('.')">.</button>
+            <button onclick="calcScreenClear('')">AC</button>
+            <button onclick="calcOutput('')" style="background-color: blueviolet;">=</button>
+
+        </div>
+
+    </div>
+</body>
+<script src="./calc.js"></script>
+</html>
